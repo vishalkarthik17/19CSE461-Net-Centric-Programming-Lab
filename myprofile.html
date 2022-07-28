@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5e4ab2eb41.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="leftbar">
+                <nav>
+                <ul>
+                    <li><img class="logo" src="./images/logo_open_blogs.png"></li>
+                    <li><a  href="index.html"><i class="fa-solid fa-house"></i> &nbsp; &nbsp; Feed</a></li>
+                    <li><a href="postablog.html"><i class="fa-solid fa-blog"></i> &nbsp; &nbsp; Post a Blog</a></li>
+                    <li><a href="discover.html"><i class="fa-solid fa-magnifying-glass"></i> &nbsp; &nbsp; Discover</a></li>
+                    <li><a href="savedblog.html"><i class="fa-solid fa-bookmark"></i>&nbsp; &nbsp; Saved Blog</a></li>
+                    <li><a href="topics.html"><i class="fa-solid fa-border-all"></i> &nbsp; &nbsp; Topics</a></li>
+                    <li><a class="active" href="myprofile.html"><i class="fa-solid fa-user"></i> &nbsp; &nbsp; My Profile</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i> &nbsp; &nbsp; About Us</a></li>
+                    
+                    
+                </ul>
+                </nav>
+            </div>
+       
+
+       
+
+            
+            <div class="maincontent">
+                <h1 style="padding: 30px;align-items: center;">My Profile</h1>
+                
+                <div class="cardprofile">
+                    <img src="images/vishal_img.jpeg" alt="John" style="width: 100%;">
+                    <h1>Vishal Karthikeyan</h1>           
+                        <p class="title1">Writer | Engineer | Gamer</p>
+                        <p class="title2">Chennai, India</p>
+                    <p><a href="editprofile.html"><button class="buttonContact">Edit</button></a></p>
+                  </div>
+                <div style="height: 50px; width: 100%;"></div>
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'followers')" id="defaultOpen">Followers</button>
+                    <button class="tablinks" onclick="openCity(event, 'following')">Following</button>
+                    <button class="tablinks" onclick="openCity(event, 'topics')">Topics</button>
+                  </div>
+                  
+                  <div id="followers" class="tabcontent">
+                    <ul>
+                        <li>Ted Mosby<button>remove</button></li>
+                        <li>Barney Stinson<button>remove</button></li>
+                        <li>Marshal Erikson<button>remove</button></li>
+                        <li>Lily Aldrin<button>remove</button></li>
+                        <li>Robin Scherbatsky<button>remove</button></li>
+                        
+                        
+                    </ul>
+                  </div>
+                  
+                  <div id="following" class="tabcontent">
+                    <ul>
+                        <li>Leroy Gibbs<button>unfollow</button></li>
+                        <li>Tim McGee<button>unfollow</button></li>
+                        <li>Anthony Dinozo<button>unfollow</button></li>
+                        <li>Ziva David<button>unfollow</button></li>
+                        <li>Donald Mallard<button>unfollow</button></li>
+                        <li>Jimmy Palmer<button>unfollow</button></li>
+                        <li>Ellie Bishop<button>unfollow</button></li>
+                        
+                    </ul>
+                  </div>
+                  
+                  <div id="topics" class="tabcontent">
+                    <ul>
+                        <li>Sports <button>unfollow</button></li>
+                        <li>Movies<button>unfollow</button></li>
+                        <li>Gaming<button>unfollow</button></li>
+                        <li>Technology<button>unfollow</button></li>
+                        <li>Food<button>unfollow</button></li>
+                        
+                    </ul>
+                  </div>
+                
+
+                  <div style="height: 50px; width: 100%;"></div>
+
+                  <h1>My Blogs</h1>
+
+
+            </div>
+
+
+
+            <div class="rightbar">
+                <h2>Trending Topics</h2> 
+                <button class="btn-grad">Technology</button>
+                <button class="btn-grad">Education</button>
+                <button class="btn-grad">Politics</button>
+                <button class="btn-grad">Food</button>
+                <button class="btn-grad">Lifestyle</button>
+                <button class="btn-grad">Advice</button>
+                <button class="btn-grad">Gaming</button>
+                <button class="btn-grad">Experiences</button>
+               
+            </div>
+
+            
+        </div>
+           
+            
+       
+        
+
+           
+
+        <script>
+            function openCity(evt, listname) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(listname).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5e4ab2eb41.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="leftbar">
+                <nav>
+                <ul>
+                    <li><img class="logo" src="./images/logo_open_blogs.png"></li>
+                    <li><a  href="index.html"><i class="fa-solid fa-house"></i> &nbsp; &nbsp; Feed</a></li>
+                    <li><a  class="active" href="postablog.html"><i class="fa-solid fa-blog"></i> &nbsp; &nbsp; Post a Blog</a></li>
+                    <li><a href="discover.html"><i class="fa-solid fa-magnifying-glass"></i> &nbsp; &nbsp; Discover</a></li>
+                    <li><a href="savedblog.html"><i class="fa-solid fa-bookmark"></i>&nbsp; &nbsp; Saved Blog</a></li>
+                    <li><a href="topics.html"><i class="fa-solid fa-border-all"></i> &nbsp; &nbsp; Topics</a></li>
+                    <li><a  href="myprofile.html"><i class="fa-solid fa-user"></i> &nbsp; &nbsp; My Profile</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i> &nbsp; &nbsp; About Us</a></li>
+                    
+                    
+                </ul>
+                </nav>
+            </div>
+       
+
+       
+
+            
+            <div class="maincontent">
+                <h1 style="padding: 30px;">Post a Blog</h1>
+                
+                <form class="postblogform">
+                    <label for="title">Title Of The Blog: </label><br/> 
+                    <input type="text" id="title" name="title"><br/> <br/> 
+                    <label for="title">Post As: </label><br/>  
+                    <div class="pad">
+                        <input type="radio" id="html" name="fav_language" value="You">                    
+                        <label for="html">You</label><br>
+                        <input type="radio" id="css" name="fav_language" value="Anonymous">
+                        <label for="css">Anonymous</label><br>
+                    </div>
+                    
+                     
+                    <label for="cars">Topic :</label><br/> 
+                        <select name="cars" id="cars">
+                        <option value="volvo">Select</option>
+                        <option value="volvo">Technology</option>
+                        <option value="saab">Sports</option>
+                        <option value="mercedes">Food</option>
+                        <option value="audi">Lifestyle</option>
+                    </select><br/> <br/> 
+                    <label for="bcontent">Blog Content: </label><br/> 
+                    <textarea  id="bcontent" name="bcontent" rows="100"></textarea><br/> <br/> 
+                    <div ><button class="btn-grad">Post </button></div>
+                </form>
+                
+
+
+            </div>
+
+
+
+            <div class="rightbar">
+                <h2>Trending Topics</h2> 
+                <button class="btn-grad">Technology</button>
+                <button class="btn-grad">Education</button>
+                <button class="btn-grad">Politics</button>
+                <button class="btn-grad">Food</button>
+                <button class="btn-grad">Lifestyle</button>
+                <button class="btn-grad">Advice</button>
+                <button class="btn-grad">Gaming</button>
+                <button class="btn-grad">Experiences</button>
+               
+            </div>
+
+            
+        </div>
+           
+            
+       
+        
+
+           
+
+
+
+    </body>
+</html>
