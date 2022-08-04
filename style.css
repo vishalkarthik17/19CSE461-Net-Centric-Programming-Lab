@@ -19,7 +19,7 @@ body{
 nav{
     display: flex;
     position: sticky;
-    flex-basis: 15%;
+    flex-basis: 16vw;
 }
 nav ul {
     list-style-type: none;
@@ -35,7 +35,7 @@ nav ul {
   nav li a {
     display: block;
     color: rgb(133, 133, 133);
-    padding: 18px 16px;
+    padding: 2vh 2vw;
     text-decoration: none;
   }
   
@@ -55,19 +55,20 @@ nav ul {
   }
 
  .maincontent{
-    margin-left:15%;
+    margin-left:14vw;
     float: left;
-    width: 65%;
+    width: 65vw;
     height:1000vh;  
  }
  .rightbar{
     float: right;
-    width: 25%;
+    width: 25vw;
     position:fixed;
-    margin-left: 80%;
+    margin-left: 80vw;
     background-color:#272727;
     height: 100%;
-    padding-left: 20px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 
  }
 
@@ -76,7 +77,7 @@ nav ul {
     padding:20px;
  }
  .leftbar{
-    width: 15%;
+    width: 16vw;
  }
 
 
@@ -94,12 +95,15 @@ img {
   .card {
     
     display: flex;
+    margin-top:5vh;
+    
     flex-direction: column;
-    width: 30%;
+    width: 300px;
     overflow: hidden;
     border-radius: 20px;
     background: #ff0905;
     background: linear-gradient(to right, #2c2c2c, #181818);
+    
    
   }
   
@@ -191,8 +195,8 @@ img {
          
   .btn-grad {
     background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
-    margin: 10px;
-    padding: 15px 45px;
+    margin: 0.6vw;
+    padding: 1vw 3vw;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -387,3 +391,49 @@ img {
   color:#bcbcbc;
   align-self: center;
 }
+
+
+
+@media screen and (max-width: 700px) {
+  
+
+  .logo{
+    display: none;
+  }
+  .menuText{
+    display: none;
+  }
+  .leftbar{
+    width: 5vw;
+    transition: 0.5s;
+    
+ }
+ .rightbar{
+  display: none;
+  
+}
+.maincontent{
+  margin-left: 5vw;
+  float: left;
+  width: 100%;
+  height:1000vh;  
+  padding: 2vw;
+}
+.feedtext{
+  margin-left:35%;
+}
+
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5vw;
+  gap: 1vw;
+  
+  
+}
+
+
