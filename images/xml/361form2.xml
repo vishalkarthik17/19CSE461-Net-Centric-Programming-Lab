@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile SYSTEM "361form2.dtd">
+<profile>
+    <userid id="101"></userid>
+    <username type="must">ABC</username>
+    <about type="optional"></about>
+    <location type="optional">tt</location>
+</profile>

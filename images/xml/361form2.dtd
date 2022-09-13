@@ -1,0 +1,13 @@
+<!ELEMENT profile (userid,username,about,location)>
+<!ELEMENT userid (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT about (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+
+
+<!ATTLIST postas type CDATA "self">
+<!ATTLIST postas type CDATA "anonymous">
+<!ATTLIST userid id CDATA #REQUIRED>
+<!ATTLIST username type CDATA #REQUIRED>
+<!ATTLIST about type CDATA #IMPLIED>
+<!ATTLIST location type CDATA #IMPLIED>

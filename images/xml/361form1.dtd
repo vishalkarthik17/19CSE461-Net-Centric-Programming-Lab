@@ -1,0 +1,13 @@
+<!ELEMENT article (userid,title,postas,topic,content)>
+<!ELEMENT userid (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT postas (#PCDATA)>
+<!ELEMENT topic (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+
+<!ATTLIST postas type CDATA "self">
+<!ATTLIST postas type CDATA "anonymous">
+<!ATTLIST userid id CDATA #REQUIRED>
+<!ATTLIST topic type CDATA #IMPLIED>
+
+

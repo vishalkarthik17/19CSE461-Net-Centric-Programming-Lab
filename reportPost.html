@@ -10,56 +10,35 @@
     </head>
     <body>
         <div class="container">
-            <aside class="leftbar">
+            <div class="leftbar">
                 <nav>
                 <ul>
                     <li><img class="logo" src="./images/logo_open_blogs.png"></li>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> <span class="menuText">&nbsp; &nbsp; Feed</span></a></li>
-                    <li><a class="active" href="postablog.html"><i class="fa-solid fa-blog"></i> <span class="menuText">&nbsp; &nbsp; Post An Article</span></a></li>
-                    <li><a  href="discover.html"><i class="fa-solid fa-magnifying-glass"></i><span class="menuText"> &nbsp; &nbsp; Discover</span></a></li>
-                    <li><a href="savedblog.html"><i class="fa-solid fa-bookmark"></i><span class="menuText">&nbsp; &nbsp;Saved Articles</span></a></li>
-                    <li><a href="topics.html"><i class="fa-solid fa-border-all"></i><span class="menuText"> &nbsp; &nbsp; Topics</span></a></li>
-                    <li><a  href="myprofile.html"><i class="fa-solid fa-user"></i> <span class="menuText">&nbsp; &nbsp; My Profile</span></a></li>
-                    <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i><span class="menuText">&nbsp; &nbsp; About Us</span></a></li>
+                    <li><a  class="active" href="index.html"><i class="fa-solid fa-house"></i> &nbsp; &nbsp; Feed</a></li>
+                    <li><a  href="postablog.html"><i class="fa-solid fa-blog"></i> &nbsp; &nbsp; Post An Article</a></li>
+                    <li><a href="discover.html"><i class="fa-solid fa-magnifying-glass"></i> &nbsp; &nbsp; Discover</a></li>
+                    <li><a  href="savedblog.html"><i class="fa-solid fa-bookmark"></i>&nbsp; &nbsp; Saved Articles</a></li>
+                    <li><a  href="topics.html"><i class="fa-solid fa-border-all"></i> &nbsp; &nbsp; Topics</a></li>
+                    <li><a  href="myprofile.html"><i class="fa-solid fa-user"></i> &nbsp; &nbsp; My Profile</a></li>
+                    <li><a  href="aboutus.html"><i class="fa-solid fa-address-card"></i> &nbsp; &nbsp; About Us</a></li>
                     
                 </ul>
                 </nav>
-            
-          </aside>
+            </div>
        
 
        
 
             
             <div class="maincontent">
-                <h1 style="padding: 30px;">Post an Article</h1>
+                <h1 style="padding: 30px;">Report a Post</h1>
+
+                
+
                 
                 <form class="postblogform">
-                    <label for="title">Title Of The Article: </label><br/> 
-                    <input type="text" id="title" name="title"><br/> <br/> 
-                    <label for="title">Link For Thumbnail Image: </label><br/> 
-                    <input type="text" id="title" name="title"><br/> <br/> 
-                    <label for="title">Post As: </label><br/>  
-                    <div class="pad">
-                        <input type="radio" id="html" name="fav_language" value="You">                    
-                        <label for="html">You</label><br>
-                        <input type="radio" id="css" name="fav_language" value="Anonymous">
-                        <label for="css">Anonymous</label><br>
-                    </div>
                     
-                     
-                    <label for="cars">Topic :</label><br/> 
-                        <select name="cars" id="cars">
-                        <option value="volvo">Select</option>
-                        <option value="volvo">Technology</option>
-                        <option value="saab">Sports</option>
-                        <option value="mercedes">Food</option>
-                        <option value="audi">Lifestyle</option>
-                    </select><br/> <br/> 
-                    <label for="bcontent">Article Content: </label><br/> 
-                    <textarea  id="bcontent" name="bcontent" rows="100"></textarea><br/> <br/> 
                     
-
                     <label for="title">Does the content has offensive language? </label><br/>  
                     <div class="pad">
                         <input type="radio" id="html" name="fav_language" value="You">                    
@@ -84,7 +63,19 @@
                         <label for="css">No</label><br>
                     </div>
 
-                    <div ><button class="btn-grad">Post </button></div>
+                    <label for="title">Is the content a hoax or which spreads misinformation?  </label><br/>  
+                    <div class="pad">
+                        <input type="radio" id="html" name="fav_language" value="You">                    
+                        <label for="html">Yes</label><br>
+                        <input type="radio" id="css" name="fav_language" value="Anonymous">
+                        <label for="css">No</label><br>
+                    </div>
+                    
+                    <label for="title"> Anything you want to add?:  </label><br/> 
+                    <textarea type="text" id="title" name="title" rows="6"> </textarea><br/> <br/> 
+
+
+                    <div ><button class="btn-grad">Report </button></div>
                 </form>
                 
 
